@@ -31,9 +31,5 @@ class MainActivity : AppCompatActivity() {
             args = UserDataFragment.args(userDataType),
             navOptions = NavOptions.Builder().setPopUpTo(R.id.firstFragment, true).build()
         )
-        Log.e(
-            "DRE",
-            "backstack update, count is ${navController.backQueue.joinToString { it.destination.displayName }}"
-        )
     }
 }
