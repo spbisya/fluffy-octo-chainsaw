@@ -33,5 +33,6 @@ class MainActivity : AppCompatActivity() {
             navOptions = NavOptions.Builder().setPopUpTo(R.id.firstFragment, true).build()
         )
         Log.e("LOG", "error")
+        Log.e("LOG2", "new error")
     }
 }
