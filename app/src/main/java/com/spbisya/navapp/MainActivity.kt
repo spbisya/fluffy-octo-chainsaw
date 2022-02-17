@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
+import com.spbisya.navapp.R
 import com.spbisya.navapp.databinding.ActivityMainBinding
 import com.spbisya.navapp.fragments.UserDataFragment
 import com.spbisya.navapp.fragments.UserDataType
@@ -31,5 +32,6 @@ class MainActivity : AppCompatActivity() {
             args = UserDataFragment.args(userDataType),
             navOptions = NavOptions.Builder().setPopUpTo(R.id.firstFragment, true).build()
         )
+        Log.e("LOG", "error")
     }
 }
